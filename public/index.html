@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YouCut</title>
+    </head>
+
+    <body style="text-align: center;">
+
+        <div id="start" style="margin-top: 10%;">
+            <input type="url" id="you-url" style="width: 30%; padding: 0.25rem;"
+                placeholder="URL видео с YouTube" />
+            <div style="margin-top: 1%;">
+                <button id="load-button" type="submit">Открыть видео</button>
+            </div>
+        </div>
+
+        <div id="main" style="display: none;">
+            <div style="text-align: center; margin-top: 2%;">
+                <video id="video" width="32%" height="auto" controls></video>
+                <div>
+                    <button id="shot">Сделать скриншот</button>
+                </div>
+            </div>
+            <div id="captures" style="text-align: center; margin-top: 2%;"></div>
+        </div>
+
+        <script src="youtube.js"></script>
+        <script src="main.js"></script>
+
+    </body>
+</html>
